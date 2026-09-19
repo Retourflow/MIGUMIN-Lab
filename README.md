@@ -1,7 +1,7 @@
 <table>
   <tr>
     <td width="230" align="center" valign="middle">
-      <img src="./assets/migumin-chibi-cutout.png" width="210" alt="MIGUMIN chibi assistant" />
+      <img src="./assets/migumin-mascot.webp" width="180" alt="MIGUMIN chibi assistant" />
     </td>
     <td align="left" valign="middle">
       <img src="https://readme-typing-svg.herokuapp.com?font=Cascadia+Code&weight=700&size=22&pause=1000&color=9ED7A7&center=false&vCenter=true&width=540&lines=Let%27s+learn+and+improve+together~" alt="Let's learn and improve together~" />
