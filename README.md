@@ -1,13 +1,7 @@
 <p align="center">
-  <img src="./assets/migumin-chibi-cutout.webp" width="245" alt="MIGUMIN chibi assistant" />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Cascadia+Code&weight=700&size=20&pause=1000&color=9ED7A7&center=true&vCenter=true&width=520&lines=Let%27s+learn+and+improve+together~" alt="Let's learn and improve together~" />
-</p>
-
-<p align="center">
-  <img src="./assets/lab-index.svg" width="100%" alt="MIGUMIN Lab Knowledge Map" />
+  <img src="./assets/migumin-chibi-cutout.webp" width="230" alt="MIGUMIN chibi assistant" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://readme-typing-svg.herokuapp.com?font=Cascadia+Code&weight=700&size=22&pause=1000&color=9ED7A7&center=false&vCenter=true&width=540&lines=Let%27s+learn+and+improve+together~" alt="Let's learn and improve together~" />
 </p>
 
 <p align="center">
