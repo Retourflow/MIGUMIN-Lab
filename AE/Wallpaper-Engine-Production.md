@@ -10,15 +10,19 @@
 
 ---
 
-# Wallpaper Engine 动态壁纸制作记录
+# 终末地 Perlica 动态壁纸
 
-这篇记录对应今天完成并发布的一张动态壁纸。
+这篇记录对应我制作并发布的《终末地》Perlica 动态壁纸。
 
 ## 成品
 
 **Steam Workshop**
 
 [查看最终发布作品](https://steamcommunity.com/sharedfiles/filedetails/?id=3804142795)
+
+<p align="center">
+  <img src="../assets/perlica-wallpaper-preview.webp" width="100%" alt="终末地 Perlica 动态壁纸预览" />
+</p>
 
 ---
 
