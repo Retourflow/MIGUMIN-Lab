@@ -1,8 +1,13 @@
-<p align="center">
-  <img src="./assets/migumin-chibi-cutout.webp" width="230" alt="MIGUMIN chibi assistant" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://readme-typing-svg.herokuapp.com?font=Cascadia+Code&weight=700&size=22&pause=1000&color=9ED7A7&center=false&vCenter=true&width=540&lines=Let%27s+learn+and+improve+together~" alt="Let's learn and improve together~" />
-</p>
+<table>
+  <tr>
+    <td width="230" align="center" valign="middle">
+      <img src="./assets/migumin-chibi-cutout.png" width="210" alt="MIGUMIN chibi assistant" />
+    </td>
+    <td align="left" valign="middle">
+      <img src="https://readme-typing-svg.herokuapp.com?font=Cascadia+Code&weight=700&size=22&pause=1000&color=9ED7A7&center=false&vCenter=true&width=540&lines=Let%27s+learn+and+improve+together~" alt="Let's learn and improve together~" />
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <a href="https://github.com/Retourflow"><b>PROFILE</b></a> ·
