@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-label="MIGUMIN Lab Knowledge Map">
-  <rect width="1280" height="520" fill="#F4F4F4"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-label="MIGUMIN Lab Knowledge Map">
+  <rect width="1280" height="560" fill="#F4F4F4"/>
   <rect x="0" y="0" width="1280" height="6" fill="#FFF44F"/>
 
   <rect x="28" y="28" width="54" height="54" fill="#0B0C0E"/>
@@ -16,18 +16,26 @@
   <rect x="48" y="228" width="308" height="5" fill="#FFF44F"/>
   <text x="48" y="269" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#0B0C0E">Columns lead to articles. Notes grow by subject, not by date.</text>
 
-  <path d="M48 306 H356 V462 L340 478 H48 Z" fill="#20242A" stroke="#0B0C0E" stroke-width="2"/>
+  <path d="M48 306 H328 V502 L312 518 H48 Z" fill="#20242A" stroke="#0B0C0E" stroke-width="2"/>
   <text x="72" y="338" font-family="monospace" font-size="11" font-weight="700" fill="#8A9199">ARCHIVE STATUS</text>
-  <text x="72" y="382" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#F2F3F5">01 COLUMN</text>
-  <text x="72" y="418" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#F2F3F5">02 ARTICLES</text>
-  <text x="72" y="451" font-family="monospace" font-size="11" font-weight="700" fill="#FFF44F">COLUMN → ARTICLE</text>
+  <text x="72" y="382" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#F2F3F5">02 COLUMNS</text>
+  <text x="72" y="418" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#F2F3F5">03 ARTICLES</text>
+  <line x1="72" y1="444" x2="296" y2="444" stroke="#434950"/>
+  <text x="72" y="476" font-family="monospace" font-size="11" font-weight="700" fill="#FFF44F">COLUMN → ARTICLE</text>
 
-  <path d="M390 306 H1232 V462 L1216 478 H390 Z" fill="#F2F3F5" stroke="#0B0C0E" stroke-width="2"/>
-  <rect x="390" y="306" width="842" height="6" fill="#FFF44F"/>
-  <text x="416" y="341" font-family="monospace" font-size="11" font-weight="700" fill="#6D7278">COLUMN // 01</text>
-  <text x="416" y="389" font-family="Arial, sans-serif" font-size="38" font-weight="900" fill="#0B0C0E">UNITY</text>
-  <text x="416" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#6D7278">Rendering · UI · NPR · Shader</text>
-  <text x="1038" y="341" font-family="monospace" font-size="10" font-weight="700" fill="#6D7278">ARTICLE // 002</text>
-  <text x="1038" y="374" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#0B0C0E">3D Toon Rendering</text>
-  <text x="1038" y="397" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#0B0C0E">&amp; Shader</text>
+  <path d="M360 306 H760 V502 L746 516 H360 Z" fill="#F2F3F5" stroke="#0B0C0E" stroke-width="2"/>
+  <rect x="360" y="306" width="400" height="6" fill="#FFF44F"/>
+  <text x="384" y="341" font-family="monospace" font-size="11" font-weight="700" fill="#6D7278">COLUMN // 01</text>
+  <text x="384" y="389" font-family="Arial, sans-serif" font-size="36" font-weight="900" fill="#0B0C0E">UNITY</text>
+  <text x="384" y="419" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#6D7278">Rendering · UI · NPR · Shader</text>
+  <line x1="384" y1="446" x2="730" y2="446" stroke="#D7DADD"/>
+  <text x="384" y="476" font-family="monospace" font-size="11" font-weight="700" fill="#0B0C0E">02 ARTICLES</text>
+
+  <path d="M792 306 H1232 V502 L1218 516 H792 Z" fill="#F2F3F5" stroke="#0B0C0E" stroke-width="2"/>
+  <rect x="792" y="306" width="440" height="6" fill="#FFF44F"/>
+  <text x="816" y="341" font-family="monospace" font-size="11" font-weight="700" fill="#6D7278">COLUMN // 02</text>
+  <text x="816" y="389" font-family="Arial, sans-serif" font-size="36" font-weight="900" fill="#0B0C0E">AE</text>
+  <text x="816" y="419" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#6D7278">Motion · Wallpaper · Output</text>
+  <line x1="816" y1="446" x2="1202" y2="446" stroke="#D7DADD"/>
+  <text x="816" y="476" font-family="monospace" font-size="11" font-weight="700" fill="#0B0C0E">01 ARTICLE</text>
 </svg>
