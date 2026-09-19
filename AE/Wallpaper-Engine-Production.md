@@ -20,9 +20,6 @@
 
 [查看最终发布作品](https://steamcommunity.com/sharedfiles/filedetails/?id=3804142795)
 
-<p align="center">
-  <img src="../assets/perlica-wallpaper-preview.webp" width="100%" alt="终末地 Perlica 动态壁纸预览" />
-</p>
 
 ---
 
