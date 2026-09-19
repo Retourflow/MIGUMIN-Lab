@@ -17,7 +17,7 @@
 
 | Column | Area | Articles |
 | --- | --- | ---: |
-| [UNITY](#unity) | Rendering / UI | 1 |
+| [UNITY](#unity) | Rendering / UI / NPR | 2 |
 
 ---
 
@@ -30,6 +30,9 @@
 - [CanvasGroup 与透明渲染](./Unity/CanvasGroup-Alpha-Rendering.md)  
   `CanvasGroup` · `Alpha Blending` · `Render Order` · `RenderTexture` · `Transparency Sorting` · `Spine` · `Live2D` · `Dissolve` · `Dither Fade`
 
+- [《终末地》3 渲 2 角色渲染与 Shader 通俗解释](./Unity/Endfield-3D-Toon-Rendering-and-Shader.md)  
+  `Toon Shading` · `Ramp` · `Face SDF` · `Tangent` · `Hair Highlight` · `Mask` · `Outline` · `Render Pass` · `Layered Material` · `Tonemapping`
+
 ---
 
 ### Repository structure
@@ -39,7 +42,8 @@ MIGUMIN-Lab/
 ├── README.md
 ├── assets/
 └── Unity/
-    └── CanvasGroup-Alpha-Rendering.md
+    ├── CanvasGroup-Alpha-Rendering.md
+    └── Endfield-3D-Toon-Rendering-and-Shader.md
 ```
 
 New columns are added only when there is real study content to place inside them.
