@@ -5,7 +5,8 @@
 <p align="center">
   <a href="https://github.com/Retourflow"><b>PROFILE</b></a> ·
   <a href="#map"><b>MAP</b></a> ·
-  <a href="#unity"><b>UNITY</b></a>
+  <a href="#unity"><b>UNITY</b></a> ·
+  <a href="#ae"><b>AE</b></a>
 </p>
 
 > **Core:** document what I actually learn and understand.  
@@ -18,6 +19,7 @@
 | Column | Area | Articles |
 | --- | --- | ---: |
 | [UNITY](#unity) | Rendering / UI / NPR | 2 |
+| [AE](#ae) | Motion / Wallpaper | 1 |
 
 ---
 
@@ -35,15 +37,30 @@
 
 ---
 
+<a id="ae"></a>
+
+## AE
+
+### Motion / Wallpaper
+
+- [Wallpaper Engine 动态壁纸制作记录](./AE/Wallpaper-Engine-Production.md)  
+  `After Effects` · `Composition` · `Pre-compose` · `Aspect Ratio` · `Render` · `Wallpaper Engine`
+
+  **Published work:** [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3804142795)
+
+---
+
 ### Repository structure
 
 ```text
 MIGUMIN-Lab/
 ├── README.md
 ├── assets/
-└── Unity/
-    ├── CanvasGroup-Alpha-Rendering.md
-    └── Endfield-3D-Toon-Rendering-and-Shader.md
+├── Unity/
+│   ├── CanvasGroup-Alpha-Rendering.md
+│   └── Endfield-3D-Toon-Rendering-and-Shader.md
+└── AE/
+    └── Wallpaper-Engine-Production.md
 ```
 
 New columns are added only when there is real study content to place inside them.
