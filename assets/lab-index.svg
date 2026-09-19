@@ -19,15 +19,15 @@
   <path d="M48 306 H356 V462 L340 478 H48 Z" fill="#20242A" stroke="#0B0C0E" stroke-width="2"/>
   <text x="72" y="338" font-family="monospace" font-size="11" font-weight="700" fill="#8A9199">ARCHIVE STATUS</text>
   <text x="72" y="382" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#F2F3F5">01 COLUMN</text>
-  <text x="72" y="418" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#F2F3F5">01 ARTICLE</text>
+  <text x="72" y="418" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#F2F3F5">02 ARTICLES</text>
   <text x="72" y="451" font-family="monospace" font-size="11" font-weight="700" fill="#FFF44F">COLUMN → ARTICLE</text>
 
   <path d="M390 306 H1232 V462 L1216 478 H390 Z" fill="#F2F3F5" stroke="#0B0C0E" stroke-width="2"/>
   <rect x="390" y="306" width="842" height="6" fill="#FFF44F"/>
   <text x="416" y="341" font-family="monospace" font-size="11" font-weight="700" fill="#6D7278">COLUMN // 01</text>
   <text x="416" y="389" font-family="Arial, sans-serif" font-size="38" font-weight="900" fill="#0B0C0E">UNITY</text>
-  <text x="416" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#6D7278">Rendering · UI · Transparency · Shader</text>
-  <text x="1038" y="341" font-family="monospace" font-size="10" font-weight="700" fill="#6D7278">ARTICLE // 001</text>
-  <text x="1038" y="374" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#0B0C0E">CanvasGroup &amp;</text>
-  <text x="1038" y="397" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#0B0C0E">Alpha Rendering</text>
+  <text x="416" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#6D7278">Rendering · UI · NPR · Shader</text>
+  <text x="1038" y="341" font-family="monospace" font-size="10" font-weight="700" fill="#6D7278">ARTICLE // 002</text>
+  <text x="1038" y="374" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#0B0C0E">3D Toon Rendering</text>
+  <text x="1038" y="397" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#0B0C0E">&amp; Shader</text>
 </svg>
