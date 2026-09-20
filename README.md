@@ -25,7 +25,7 @@
 
 | Column | Area | Articles |
 | --- | --- | ---: |
-| [UNITY](#unity) | Rendering / UI / NPR | 2 |
+| [UNITY](#unity) | Rendering / UI / NPR / Materials | 3 |
 | [AE](#ae) | Motion / Wallpaper | 1 |
 
 ---
@@ -41,6 +41,9 @@
 
 - [《终末地》3 渲 2 角色渲染与 Shader 通俗解释](./Unity/Endfield-3D-Toon-Rendering-and-Shader.md)  
   `Toon Shading` · `Ramp` · `Face SDF` · `Tangent` · `Hair Highlight` · `Mask` · `Outline` · `Render Pass` · `Layered Material` · `Tonemapping`
+
+- [反光地面：Shader、反射、Roughness、Bump 与环境之间的关系](./Unity/Reflective-Floor-Shader-Reflection-Roughness-Bump.md)  
+  `Light` · `Normal` · `Shader` · `Mask` · `Roughness` · `Bump` · `Reflection` · `Environment` · `Bloom`
 
 ---
 
@@ -65,7 +68,8 @@ MIGUMIN-Lab/
 ├── assets/
 ├── Unity/
 │   ├── CanvasGroup-Alpha-Rendering.md
-│   └── Endfield-3D-Toon-Rendering-and-Shader.md
+│   ├── Endfield-3D-Toon-Rendering-and-Shader.md
+│   └── Reflective-Floor-Shader-Reflection-Roughness-Bump.md
 └── AE/
     └── Wallpaper-Engine-Production.md
 ```
