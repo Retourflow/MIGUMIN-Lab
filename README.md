@@ -25,7 +25,7 @@
 
 | Column | Area | Articles |
 | --- | --- | ---: |
-| [UNITY](#unity) | Rendering / UI / NPR / Materials | 3 |
+| [UNITY](#unity) | Rendering / UI / NPR / Materials / Weather | 4 |
 | [AE](#ae) | Motion / Wallpaper | 1 |
 
 ---
@@ -44,6 +44,9 @@
 
 - [反光地面：Shader、反射、Roughness、Bump 与环境之间的关系](./Unity/Reflective-Floor-Shader-Reflection-Roughness-Bump.md)  
   `Light` · `Normal` · `Shader` · `Mask` · `Roughness` · `Bump` · `Reflection` · `Environment` · `Bloom`
+
+- [《终末地》雨雪天气与程序化 Mask](./Unity/Endfield-Weather-Procedural-Mask.md)  
+  `Wetness` · `Snow Mask` · `Normal` · `AO` · `Curvature` · `Noise` · `Material Layer` · `Reflection`
 
 ---
 
@@ -69,7 +72,8 @@ MIGUMIN-Lab/
 ├── Unity/
 │   ├── CanvasGroup-Alpha-Rendering.md
 │   ├── Endfield-3D-Toon-Rendering-and-Shader.md
-│   └── Reflective-Floor-Shader-Reflection-Roughness-Bump.md
+│   ├── Reflective-Floor-Shader-Reflection-Roughness-Bump.md
+│   └── Endfield-Weather-Procedural-Mask.md
 └── AE/
     └── Wallpaper-Engine-Production.md
 ```
