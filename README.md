@@ -37,16 +37,16 @@
 ### Rendering / UI
 
 - [CanvasGroup 与透明渲染](./Unity/CanvasGroup-Alpha-Rendering.md)  
-  理解多层 UI / 角色图层在同时改变 Alpha 时为什么会互相显形、叠色，以及 CanvasGroup、渲染顺序、RenderTexture、Dissolve / Dither Fade 等方案之间的区别。
+  记录多层 UI / 角色图片一起变透明时，为什么后面的图层会透出来、颜色会叠在一起，以及有哪些更自然的淡出和消失做法。
 
 - [《终末地》3 渲 2 角色渲染与 Shader 通俗解释](./Unity/Endfield-3D-Toon-Rendering-and-Shader.md)  
-  从普通 3D 模型出发，理解 Toon Shading、Ramp、Face SDF、头发高光、Mask、描边、Render Pass 与后期如何共同把角色塑造成二次元风格。
+  用比较简单的方式理解 3 渲 2 角色是怎么从普通 3D 模型变成二次元效果的，包括阴影、脸部、头发高光、描边和后期。
 
 - [反光地面：Shader、反射、Roughness、Bump 与环境之间的关系](./Unity/Reflective-Floor-Shader-Reflection-Roughness-Bump.md)  
-  梳理 Light、Normal、Shader、Mask、Roughness、Bump 与 Environment 的分工，并理解低 Roughness 地面为什么会反光、为什么还需要微弱 Bump 和环境内容来形成真实倒影。
+  解释反光地面为什么会反光，以及 Light、Roughness、Bump 和环境分别在控制什么，方便判断地面太亮、太像镜子或没有倒影时该检查哪里。
 
 - [《终末地》雨雪天气与程序化 Mask](./Unity/Endfield-Weather-Procedural-Mask.md)  
-  从全局天气参数出发，理解 Wetness、Snow Layer 与程序化 Mask 如何驱动角色、地面和建筑对雨雪作出不同响应，并延伸到 Dust、Edge Wear 与反射系统。
+  整理雨天和雪天材质是怎么做的：雨怎么让材质变湿，雪怎么判断积在哪里，以及怎么用 Normal、AO、Curvature 等数据自动生成 Mask。
 
 ---
 
@@ -57,7 +57,7 @@
 ### Motion / Wallpaper
 
 - [终末地 Perlica 动态壁纸](./AE/Wallpaper-Engine-Production.md)  
-  使用线性分形杂色、三层 VR 色差、径向模糊与 Evolution 关键帧制作动态光束，并记录从 AE 合成到 Wallpaper Engine 发布时的画幅与输出处理。
+  记录这张 Perlica 动态壁纸的制作方法：用分形杂色、VR 色差、径向模糊和 Evolution 做出会流动的光束，并处理最终输出到 Wallpaper Engine 时的画幅和渲染问题。
 
   **Published work:** [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3804142795)
 
