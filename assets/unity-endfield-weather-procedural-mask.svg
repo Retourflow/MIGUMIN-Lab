@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="Endfield Weather and Procedural Masks">
+  <rect width="1280" height="420" fill="#F4F4F4"/>
+  <rect x="0" y="0" width="1280" height="6" fill="#FFF44F"/>
+  <rect x="28" y="28" width="54" height="54" fill="#0B0C0E"/>
+  <text x="55" y="63" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="900" fill="#FFF44F">M</text>
+  <text x="98" y="48" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#0B0C0E">MIGUMIN LAB / KNOWLEDGE ARCHIVE</text>
+  <text x="98" y="70" font-family="monospace" font-size="11" font-weight="700" fill="#6D7278">UNITY · WEATHER / PROCEDURAL MATERIALS</text>
+  <text x="1244" y="48" text-anchor="end" font-family="monospace" font-size="11" font-weight="700" fill="#6D7278">NOTE // 004</text>
+  <line x1="28" y1="100" x2="1252" y2="100" stroke="#0B0C0E" stroke-width="2"/>
+  <line x1="1090" y1="100" x2="1252" y2="100" stroke="#FFF44F" stroke-width="4"/>
+
+  <text x="48" y="150" font-family="monospace" font-size="11" font-weight="700" fill="#6D7278">TOPIC</text>
+  <text x="48" y="198" font-family="Arial, sans-serif" font-size="37" font-weight="900" fill="#0B0C0E">Endfield Rain / Snow Weather</text>
+  <text x="48" y="240" font-family="Arial, sans-serif" font-size="37" font-weight="900" fill="#0B0C0E">&amp; Procedural Masks</text>
+  <rect x="48" y="260" width="420" height="5" fill="#FFF44F"/>
+  <text x="48" y="296" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0B0C0E">From global weather state to wetness, snow layers and data-driven procedural masks.</text>
+
+  <path d="M48 326 H1232 V382 L1216 398 H48 Z" fill="#20242A" stroke="#0B0C0E" stroke-width="2"/>
+  <text x="72" y="350" font-family="monospace" font-size="11" font-weight="700" fill="#8A9199">KEYWORDS</text>
+  <text x="72" y="375" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#F2F3F5">Wetness · Snow Mask · Normal · AO · Curvature · Noise · Material Layer · Reflection</text>
+  <text x="1208" y="350" text-anchor="end" font-family="monospace" font-size="11" font-weight="700" fill="#FFF44F">COLUMN / UNITY</text>
+</svg>
