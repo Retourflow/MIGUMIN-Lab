@@ -25,7 +25,7 @@
 
 | Column | Area | Articles |
 | --- | --- | ---: |
-| [UNITY](#unity) | Rendering / UI / NPR / Materials / Weather | 5 |
+| [UNITY](#unity) | Rendering / UI / NPR / Materials / Weather / Modeling | 6 |
 | [AE](#ae) | Motion / Wallpaper | 1 |
 
 ---
@@ -50,6 +50,9 @@
 
 - [AO：从“角落为什么会变暗”到 Shader 里的实际用法](./Unity/AO-Ambient-Occlusion-Shader.md)  
   这篇是我把 AO 单独拎出来重新整理的一篇。之前总会把 AO、普通阴影和灰尘混在一起，看到角落变暗就很容易理解成“这里比较脏”。整理完以后终于理清了：AO 说的是周围空间有多封闭、环境光有多难进去；它本身不是灰尘，也不是普通 Shadow，但既能直接帮助表现空间感，也能作为 Dust / Dirt 这类程序化 Mask 的一份输入数据。
+
+- [游戏角色模型：高模、动画模、游戏模，以及 Maya / 3ds Max 的位置](./Unity/Game-Character-Models-Highpoly-Animation-Game-ready.md)  
+  这篇是我在看角色制作界面、判断眼前的模型到底算高模还是游戏模时整理出来的。一开始很容易把“用 Maya 做动画”“动画模”“高模”这些概念混在一起，甚至会觉得 Maya 更偏动画、3ds Max 才更像游戏建模。最后把它们的关系理清了：高模看的是几何细节，动画模看的是拓扑能不能自然变形，游戏模看的是能不能实时运行；它们不是固定的先后等级，而且很多游戏里动画模和游戏模本来就是同一个 Mesh。Maya、3ds Max、Blender 更像是制作工具，本身并不能决定一个模型属于哪一类。
 
 ---
 
@@ -77,7 +80,8 @@ MIGUMIN-Lab/
 │   ├── Endfield-3D-Toon-Rendering-and-Shader.md
 │   ├── Reflective-Floor-Shader-Reflection-Roughness-Bump.md
 │   ├── Endfield-Weather-Procedural-Mask.md
-│   └── AO-Ambient-Occlusion-Shader.md
+│   ├── AO-Ambient-Occlusion-Shader.md
+│   └── Game-Character-Models-Highpoly-Animation-Game-ready.md
 └── AE/
     └── Wallpaper-Engine-Production.md
 ```
