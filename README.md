@@ -25,7 +25,7 @@
 
 | Column | Area | Articles |
 | --- | --- | ---: |
-| [UNITY](#unity) | Rendering / UI / NPR / Materials / Weather | 4 |
+| [UNITY](#unity) | Rendering / UI / NPR / Materials / Weather | 5 |
 | [AE](#ae) | Motion / Wallpaper | 1 |
 
 ---
@@ -47,6 +47,9 @@
 
 - [《终末地》雨雪天气与程序化 Mask](./Unity/Endfield-Weather-Procedural-Mask.md)  
   这篇是从《终末地》的雨雪效果一路整理下来的。最有意思的是发现雨、雪、灰尘和边缘磨损虽然看起来完全不同，但背后其实都可以用已有数据去生成 Mask。最后把“程序化 Mask 到底是什么”这件事理清了：Mask 不一定是一张手画的黑白图，它本质上只是 0～1 的权重，可以直接由 Normal、AO、Curvature、Roughness、Metallic、Noise 等数据算出来，再去决定雪、灰尘、湿润或磨损应该出现在哪里。
+
+- [AO：从“角落为什么会变暗”到 Shader 里的实际用法](./Unity/AO-Ambient-Occlusion-Shader.md)  
+  这篇是我把 AO 单独拎出来重新整理的一篇。之前总会把 AO、普通阴影和灰尘混在一起，看到角落变暗就很容易理解成“这里比较脏”。整理完以后终于理清了：AO 说的是周围空间有多封闭、环境光有多难进去；它本身不是灰尘，也不是普通 Shadow，但既能直接帮助表现空间感，也能作为 Dust / Dirt 这类程序化 Mask 的一份输入数据。
 
 ---
 
@@ -73,7 +76,8 @@ MIGUMIN-Lab/
 │   ├── CanvasGroup-Alpha-Rendering.md
 │   ├── Endfield-3D-Toon-Rendering-and-Shader.md
 │   ├── Reflective-Floor-Shader-Reflection-Roughness-Bump.md
-│   └── Endfield-Weather-Procedural-Mask.md
+│   ├── Endfield-Weather-Procedural-Mask.md
+│   └── AO-Ambient-Occlusion-Shader.md
 └── AE/
     └── Wallpaper-Engine-Production.md
 ```
