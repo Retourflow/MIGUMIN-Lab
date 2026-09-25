@@ -25,7 +25,7 @@
 
 | Column | Area | Articles |
 | --- | --- | ---: |
-| [UNITY](#unity) | Rendering / UI / NPR / PBR / Materials / Weather / Modeling | 7 |
+| [UNITY](#unity) | Rendering / UI / NPR / PBR / Materials / Weather / Modeling / Water | 8 |
 | [AE](#ae) | Motion / Wallpaper | 1 |
 
 ---
@@ -57,6 +57,9 @@
 - [PBR 中 Roughness、Specular 与 Metallic 的关系](./Unity/PBR-Roughness-Specular-Metallic.md)  
   这篇是我在看一个玩偶角色的眼睛材质时顺手复习整理出来的。最开始看到外层镜片反光很强，很容易直觉上把“很亮、很像镜子”和 Metallic 联系在一起。整理完以后把这三个参数真正分开了：Metallic 先决定它是不是按金属来算，Roughness 决定反射是清楚还是散开，Specular 主要决定非金属表面的镜面反射有多强。也因此理清了一个很实用的问题——玻璃、树脂、亚克力这类非金属完全可以非常亮、非常反光，低 Roughness 并不等于高 Metallic；像玩偶眼睛这种效果，更可能是低 Roughness 的非金属镜片，再配合 Specular 或 Clear Coat。
 
+- [游戏水体 Shader：从经典结构到完整场景效果](./Unity/Game-Water-Shader.md)  
+  这篇是我开始认真拆游戏里的水体效果时整理出来的。最开始会觉得“游戏里的水应该都有一套经典 Shader，换换参数就差不多了”，继续往下拆以后才发现这句话只对了一半。最后理清的是：水体确实反复使用 Wave、Depth、Normal、Fresnel、Reflection、Refraction、Foam、Ripple 这些经典模块，但真正决定最终效果的并不只是 Shader 本身，还包括水底、岸边地形、环境反射、灯光、Caustics、Bloom 和后处理。也开始能把一个完整水面拆成“大形由 Mesh / Wave 控制、小波纹由 Normal 控制、哪里出现效果由各种 Mask 决定、最后再由场景和渲染系统把它补完整”。
+
 ---
 
 <a id="ae"></a>
@@ -85,7 +88,8 @@ MIGUMIN-Lab/
 │   ├── Endfield-Weather-Procedural-Mask.md
 │   ├── AO-Ambient-Occlusion-Shader.md
 │   ├── Game-Character-Models-Highpoly-Animation-Game-ready.md
-│   └── PBR-Roughness-Specular-Metallic.md
+│   ├── PBR-Roughness-Specular-Metallic.md
+│   └── Game-Water-Shader.md
 └── AE/
     └── Wallpaper-Engine-Production.md
 ```
