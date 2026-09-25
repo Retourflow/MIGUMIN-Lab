@@ -25,7 +25,7 @@
 
 | Column | Area | Articles |
 | --- | --- | ---: |
-| [UNITY](#unity) | Rendering / UI / NPR / Materials / Weather / Modeling | 6 |
+| [UNITY](#unity) | Rendering / UI / NPR / PBR / Materials / Weather / Modeling | 7 |
 | [AE](#ae) | Motion / Wallpaper | 1 |
 
 ---
@@ -54,6 +54,9 @@
 - [游戏角色模型：高模、动画模、游戏模，以及 Maya / 3ds Max 的位置](./Unity/Game-Character-Models-Highpoly-Animation-Game-ready.md)  
   这篇是我在看角色制作界面、判断眼前的模型到底算高模还是游戏模时整理出来的。一开始很容易把“用 Maya 做动画”“动画模”“高模”这些概念混在一起，甚至会觉得 Maya 更偏动画、3ds Max 才更像游戏建模。最后把它们的关系理清了：高模看的是几何细节，动画模看的是拓扑能不能自然变形，游戏模看的是能不能实时运行；它们不是固定的先后等级，而且很多游戏里动画模和游戏模本来就是同一个 Mesh。Maya、3ds Max、Blender 更像是制作工具，本身并不能决定一个模型属于哪一类。
 
+- [PBR 中 Roughness、Specular 与 Metallic 的关系](./Unity/PBR-Roughness-Specular-Metallic.md)  
+  这篇是我在看一个玩偶角色的眼睛材质时顺手复习整理出来的。最开始看到外层镜片反光很强，很容易直觉上把“很亮、很像镜子”和 Metallic 联系在一起。整理完以后把这三个参数真正分开了：Metallic 先决定它是不是按金属来算，Roughness 决定反射是清楚还是散开，Specular 主要决定非金属表面的镜面反射有多强。也因此理清了一个很实用的问题——玻璃、树脂、亚克力这类非金属完全可以非常亮、非常反光，低 Roughness 并不等于高 Metallic；像玩偶眼睛这种效果，更可能是低 Roughness 的非金属镜片，再配合 Specular 或 Clear Coat。
+
 ---
 
 <a id="ae"></a>
@@ -81,7 +84,8 @@ MIGUMIN-Lab/
 │   ├── Reflective-Floor-Shader-Reflection-Roughness-Bump.md
 │   ├── Endfield-Weather-Procedural-Mask.md
 │   ├── AO-Ambient-Occlusion-Shader.md
-│   └── Game-Character-Models-Highpoly-Animation-Game-ready.md
+│   ├── Game-Character-Models-Highpoly-Animation-Game-ready.md
+│   └── PBR-Roughness-Specular-Metallic.md
 └── AE/
     └── Wallpaper-Engine-Production.md
 ```
