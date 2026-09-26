@@ -25,7 +25,7 @@
 
 | Column | Area | Articles |
 | --- | --- | ---: |
-| [UNITY](#unity) | Rendering / UI / NPR / PBR / Materials / Weather / Modeling / Water | 8 |
+| [UNITY](#unity) | Rendering / UI / NPR / PBR / Materials / Weather / Modeling / Water | 9 |
 | [AE](#ae) | Motion / Wallpaper | 1 |
 
 ---
@@ -60,6 +60,9 @@
 - [游戏水体 Shader：从经典结构到完整场景效果](./Unity/Game-Water-Shader.md)  
   这篇是我开始认真拆游戏里的水体效果时整理出来的。最开始会觉得“游戏里的水应该都有一套经典 Shader，换换参数就差不多了”，继续往下拆以后才发现这句话只对了一半。最后理清的是：水体确实反复使用 Wave、Depth、Normal、Fresnel、Reflection、Refraction、Foam、Ripple 这些经典模块，但真正决定最终效果的并不只是 Shader 本身，还包括水底、岸边地形、环境反射、灯光、Caustics、Bloom 和后处理。也开始能把一个完整水面拆成“大形由 Mesh / Wave 控制、小波纹由 Normal 控制、哪里出现效果由各种 Mask 决定、最后再由场景和渲染系统把它补完整”。
 
+- [三渲二角色建模与 Toon Shader：Geometry、Normal 与光照的分工](./Unity/Geometry-driven-NPR-Toon-Shader.md)  
+  这篇是我看一个三渲二角色制作短片时一路记下来的。刚开始最容易把“角色好看”直接归到 Shader 上，尤其看到头发和脸部的二次元明暗时，会下意识觉得一定用了很复杂的角色 Shader。把灰模、发束拓扑和不同灯光状态对着看以后，才慢慢理清这件事：很多二维感其实在建模阶段就已经被做进 Geometry 里了，Normal 再决定光照怎样理解这些表面，Toon Shader 最后只是把连续光照压成干净的二次元色块。也顺便理清了 Vertex Position、Vertex Normal、Normal Map 和 N·L 之间的关系——模型真实形状可以不变，但只要改变 Normal，最终看到的明暗和“形状感”就会跟着变化。
+
 ---
 
 <a id="ae"></a>
@@ -89,7 +92,8 @@ MIGUMIN-Lab/
 │   ├── AO-Ambient-Occlusion-Shader.md
 │   ├── Game-Character-Models-Highpoly-Animation-Game-ready.md
 │   ├── PBR-Roughness-Specular-Metallic.md
-│   └── Game-Water-Shader.md
+│   ├── Game-Water-Shader.md
+│   └── Geometry-driven-NPR-Toon-Shader.md
 └── AE/
     └── Wallpaper-Engine-Production.md
 ```
