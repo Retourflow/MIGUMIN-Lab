@@ -25,7 +25,7 @@
 
 | Column | Area | Articles |
 | --- | --- | ---: |
-| [UNITY](#unity) | Rendering / UI / NPR / PBR / Materials / Weather / Modeling / Water | 9 |
+| [UNITY](#unity) | Rendering / UI / NPR / PBR / Materials / Weather / Modeling / Water / Pipeline | 10 |
 | [AE](#ae) | Motion / Wallpaper | 1 |
 
 ---
@@ -63,6 +63,9 @@
 - [三渲二角色建模与 Toon Shader：Geometry、Normal 与光照的分工](./Unity/Geometry-driven-NPR-Toon-Shader.md)  
   这篇是我看一个三渲二角色制作短片时一路记下来的。刚开始最容易把“角色好看”直接归到 Shader 上，尤其看到头发和脸部的二次元明暗时，会下意识觉得一定用了很复杂的角色 Shader。把灰模、发束拓扑和不同灯光状态对着看以后，才慢慢理清这件事：很多二维感其实在建模阶段就已经被做进 Geometry 里了，Normal 再决定光照怎样理解这些表面，Toon Shader 最后只是把连续光照压成干净的二次元色块。也顺便理清了 Vertex Position、Vertex Normal、Normal Map 和 N·L 之间的关系——模型真实形状可以不变，但只要改变 Normal，最终看到的明暗和“形状感”就会跟着变化。
 
+- [实时渲染与渲染管线：从 EEVEE 到 Redshift](./Unity/Real-Time-Rendering-and-Rendering-Pipeline.md)  
+  这篇是我在比较 EEVEE、UE 和 Redshift 时整理出来的。一开始不太明白为什么 EEVEE 被叫作光栅化渲染引擎，Redshift 却主要使用路径追踪，也容易把 Shader 和渲染管线理解成前后独立的两步。一路梳理下来，终于分清了：光栅化主要负责确定几何体在屏幕上覆盖哪里，并不代表没有光照计算；路径追踪通过采样光线路径估算光的传播，同样需要 Shader 参与材质计算。Shader 是渲染管线中各个可编程阶段执行的程序，而不是管线之外的一道工序。也进一步理清了实时与离线描述的是时间要求，光栅化与路径追踪描述的才是算法选择。
+
 ---
 
 <a id="ae"></a>
@@ -93,7 +96,8 @@ MIGUMIN-Lab/
 │   ├── Game-Character-Models-Highpoly-Animation-Game-ready.md
 │   ├── PBR-Roughness-Specular-Metallic.md
 │   ├── Game-Water-Shader.md
-│   └── Geometry-driven-NPR-Toon-Shader.md
+│   ├── Geometry-driven-NPR-Toon-Shader.md
+│   └── Real-Time-Rendering-and-Rendering-Pipeline.md
 └── AE/
     └── Wallpaper-Engine-Production.md
 ```
