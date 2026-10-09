@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="820" viewBox="0 0 1500 820" role="img" aria-label="Water ripple color height normal relationship">
+<defs>
+<radialGradient id="rings" cx="50%" cy="50%" r="50%">
+  <stop offset="0" stop-color="#dff6ff"/><stop offset=".12" stop-color="#278bc4"/><stop offset=".22" stop-color="#e8fbff"/><stop offset=".32" stop-color="#2b86bd"/><stop offset=".42" stop-color="#dff6ff"/><stop offset=".52" stop-color="#2b86bd"/><stop offset=".64" stop-color="#e8fbff"/><stop offset=".76" stop-color="#2b86bd"/><stop offset=".9" stop-color="#dff6ff"/><stop offset="1" stop-color="#2b86bd"/>
+</radialGradient>
+<radialGradient id="height" cx="50%" cy="50%" r="50%">
+  <stop offset="0" stop-color="#ffffff"/><stop offset=".12" stop-color="#4b4b4b"/><stop offset=".22" stop-color="#f4f4f4"/><stop offset=".32" stop-color="#555"/><stop offset=".42" stop-color="#ededed"/><stop offset=".52" stop-color="#5b5b5b"/><stop offset=".64" stop-color="#ededed"/><stop offset=".76" stop-color="#606060"/><stop offset=".9" stop-color="#ededed"/><stop offset="1" stop-color="#737373"/>
+</radialGradient>
+<radialGradient id="normal" cx="50%" cy="50%" r="50%">
+  <stop offset="0" stop-color="#7ea6ff"/><stop offset=".13" stop-color="#aa5cff"/><stop offset=".22" stop-color="#6fb9ff"/><stop offset=".32" stop-color="#bd63ff"/><stop offset=".42" stop-color="#72b6ff"/><stop offset=".52" stop-color="#b760f5"/><stop offset=".64" stop-color="#77b8ff"/><stop offset=".77" stop-color="#ab68ec"/><stop offset="1" stop-color="#7fa9ff"/>
+</radialGradient>
+</defs>
+<rect width="1500" height="820" fill="#f7f8fa"/>
+<g font-family="Arial,sans-serif">
+<rect x="20" y="25" width="350" height="710" rx="22" fill="#f2f8ff" stroke="#67aef0" stroke-width="3"/>
+<rect x="395" y="25" width="350" height="710" rx="22" fill="#fff7ec" stroke="#f39a3e" stroke-width="3"/>
+<rect x="770" y="25" width="260" height="710" rx="22" fill="#faf6ff" stroke="#8d61dd" stroke-width="3"/>
+<rect x="1055" y="25" width="425" height="710" rx="22" fill="#f2fbf0" stroke="#4ca84d" stroke-width="3"/>
+
+<rect x="20" y="25" width="350" height="68" rx="20" fill="#2e87d3"/><text x="195" y="69" text-anchor="middle" font-size="27" font-weight="700" fill="white">只画明暗 / 颜色</text>
+<text x="195" y="124" text-anchor="middle" font-size="21" font-weight="700" fill="#17374f">只是把波纹画出来</text>
+<rect x="55" y="155" width="280" height="280" rx="14" fill="url(#rings)"/>
+<line x1="60" y1="515" x2="330" y2="515" stroke="#20384f" stroke-width="5"/><text x="195" y="560" text-anchor="middle" font-size="21" font-weight="700" fill="#17374f">表面实际上仍然是平的</text>
+<text x="65" y="620" font-size="18" fill="#31485d">• 只改变颜色明暗</text><text x="65" y="650" font-size="18" fill="#31485d">• 法线可以完全不变</text><text x="65" y="680" font-size="18" fill="#31485d">• 不会自动改变反射方向</text>
+
+<rect x="395" y="25" width="350" height="68" rx="20" fill="#ef8614"/><text x="570" y="69" text-anchor="middle" font-size="27" font-weight="700" fill="white">高度图 Height Map</text>
+<text x="570" y="124" text-anchor="middle" font-size="21" font-weight="700" fill="#513516">记录高低起伏</text>
+<rect x="430" y="155" width="280" height="280" rx="14" fill="url(#height)"/>
+<path d="M430 535 C465 485 500 585 535 535 S605 485 640 535 S710 585 710 535" fill="none" stroke="#222" stroke-width="6"/>
+<text x="570" y="600" text-anchor="middle" font-size="21" font-weight="700" fill="#513516">有高低，就能计算坡度</text>
+<text x="440" y="640" font-size="18" fill="#6b4a23">• 亮 = 高，暗 = 低</text><text x="440" y="670" font-size="18" fill="#6b4a23">• 本身只是高度数据</text><text x="440" y="700" font-size="18" fill="#6b4a23">• 可转法线或用于位移</text>
+
+<rect x="770" y="25" width="260" height="68" rx="20" fill="#8356d6"/><text x="900" y="68" text-anchor="middle" font-size="25" font-weight="700" fill="white">从高度到法线</text>
+<text x="900" y="130" text-anchor="middle" font-size="19" font-weight="700" fill="#4c317d">比较周围高度</text>
+<circle cx="900" cy="245" r="8" fill="#3174d6"/><circle cx="840" cy="245" r="7" fill="#3174d6"/><circle cx="960" cy="245" r="7" fill="#3174d6"/><circle cx="900" cy="185" r="7" fill="#3174d6"/><circle cx="900" cy="305" r="7" fill="#3174d6"/>
+<line x1="840" y1="245" x2="960" y2="245" stroke="#6d7f96" stroke-width="2"/><line x1="900" y1="185" x2="900" y2="305" stroke="#6d7f96" stroke-width="2"/>
+<text x="900" y="350" text-anchor="middle" font-size="18" fill="#4c317d">高度差 → 坡度</text>
+<path d="M840 470 Q900 410 960 470" fill="none" stroke="#9aa8b6" stroke-width="5"/><line x1="900" y1="455" x2="930" y2="395" stroke="#26a13b" stroke-width="7"/><text x="900" y="520" text-anchor="middle" font-size="18" fill="#4c317d">坡度 → Normal</text>
+<text x="800" y="620" font-size="17" fill="#5a4385">看邻居比自己高多少</text><text x="800" y="650" font-size="17" fill="#5a4385">就能推导局部朝向</text>
+
+<rect x="1055" y="25" width="425" height="68" rx="20" fill="#38943d"/><text x="1268" y="69" text-anchor="middle" font-size="27" font-weight="700" fill="white">法线图 Normal Map</text>
+<text x="1268" y="124" text-anchor="middle" font-size="21" font-weight="700" fill="#244f28">记录朝向 / 倾斜</text>
+<rect x="1095" y="155" width="345" height="280" rx="14" fill="url(#normal)"/>
+<path d="M1100 515 Q1145 480 1190 515 T1280 515 T1370 515 T1435 515" fill="none" stroke="#5182c7" stroke-width="4"/>
+<g stroke="#2463d5" stroke-width="4">
+<line x1="1140" y1="510" x2="1125" y2="470"/><line x1="1190" y1="510" x2="1205" y2="466"/><line x1="1240" y1="510" x2="1228" y2="465"/><line x1="1290" y1="510" x2="1306" y2="468"/><line x1="1340" y1="510" x2="1326" y2="464"/><line x1="1390" y1="510" x2="1404" y2="466"/>
+</g>
+<text x="1268" y="580" text-anchor="middle" font-size="21" font-weight="700" fill="#244f28">不是记录高低，而是记录朝哪边倾</text>
+<text x="1095" y="630" font-size="18" fill="#355f39">• 影响高光方向</text><text x="1095" y="660" font-size="18" fill="#355f39">• 改变反射方向</text><text x="1095" y="690" font-size="18" fill="#355f39">• 可参与折射与光照计算</text>
+
+<rect x="20" y="755" width="1460" height="48" rx="18" fill="#eee8fb" stroke="#a487df" stroke-width="2"/>
+<text x="750" y="787" text-anchor="middle" font-size="23" font-weight="700" fill="#2d2f33">高度图 = 这个地方高还是低；法线图 = 这个地方朝哪边倾斜。</text>
+</g></svg>
