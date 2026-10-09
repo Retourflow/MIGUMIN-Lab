@@ -13,6 +13,7 @@
   <a href="https://github.com/Retourflow"><b>PROFILE</b></a> ·
   <a href="#map"><b>MAP</b></a> ·
   <a href="#unity"><b>UNITY</b></a> ·
+  <a href="#blender"><b>BLENDER</b></a> ·
   <a href="#ae"><b>AE</b></a>
 </p>
 
@@ -26,6 +27,7 @@
 | Column | Area | Articles |
 | --- | --- | ---: |
 | [UNITY](#unity) | Rendering / UI / NPR / PBR / Materials / Weather / Modeling / Water / Pipeline | 10 |
+| [BLENDER](#blender) | Toon Shading / NPR | 1 |
 | [AE](#ae) | Motion / Wallpaper | 1 |
 
 ---
@@ -68,6 +70,17 @@
 
 ---
 
+<a id="blender"></a>
+
+## BLENDER
+
+### Toon Shading / NPR
+
+- [三渲二二分阴影与头发高光](./Blender/Blender-Toon-Shading-Notes.md)  
+  这篇是我在 Blender 里拆最基础的三渲二节点时整理出来的。最开始最容易混在一起的是“到底是谁在判断亮暗、谁在切二分、为什么明明没有进阴影头发还是会变深”。一路把 Diffuse BSDF、Shader to RGB、ColorRamp、Lit / Shadow Tint 和 Emission 分开以后，终于把这套逻辑理清了：Diffuse BSDF 负责算受光，Shader to RGB 把结果拿出来，ColorRamp 只负责按阈值分区，真正的亮部和暗部颜色则是后面自己设计的；所以亮部完全可以故意压成浅蓝灰，再给高光留空间。也顺便把 Hair Highlight 和物理 Anisotropic 的关系理顺了——二次元发丝高光会借用方向性原理，但最终形状通常会被进一步艺术化。
+
+---
+
 <a id="ae"></a>
 
 ## AE
@@ -98,6 +111,8 @@ MIGUMIN-Lab/
 │   ├── Game-Water-Shader.md
 │   ├── Geometry-driven-NPR-Toon-Shader.md
 │   └── Real-Time-Rendering-and-Rendering-Pipeline.md
+├── Blender/
+│   └── Blender-Toon-Shading-Notes.md
 └── AE/
     └── Wallpaper-Engine-Production.md
 ```
